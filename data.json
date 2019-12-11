@@ -1,0 +1,54 @@
+{
+   "projects" : [
+        { 
+            "id" : "0",
+            "project_name" : "Project 1", 
+            "description" : "555-555-5555", 
+            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "live_link" : "link to the live version of the project", 
+            "github_link" : "link to the GitHub repo", 
+            "image_urls" : "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page." 
+
+        },
+        { 
+            "id" : "1",
+            "project_name" : "Project 2", 
+            "description" : "description of project 2", 
+            "technologies" : "an array of strings containing a list of the technologies used in the project 2", 
+            "live_link" : "https://skrabacher.github.io/Techdegree-Project-2/", 
+            "github_link" : "https://github.com/skrabacher/Techdegree-Project-2", 
+            "image_urls" : "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page." 
+
+        },
+        { 
+            "id" : "2",
+            "project_name" : "Project 3", 
+            "description" : "555-555-5555", 
+            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "live_link" : "link to the live version of the project", 
+            "github_link" : "link to the GitHub repo", 
+            "image_urls" : "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page." 
+
+        },
+        { 
+            "id" : "3",
+            "project_name" : "Project 4", 
+            "description" : "555-555-5555", 
+            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "live_link" : "link to the live version of the project", 
+            "github_link" : "link to the GitHub repo", 
+            "image_urls" : "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page." 
+
+        },
+        { 
+            "id" : "4",
+            "project_name" : "Project 5", 
+            "description" : "555-555-5555", 
+            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "live_link" : "link to the live version of the project", 
+            "github_link" : "link to the GitHub repo", 
+            "image_urls" : "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page." 
+
+        }
+    ]
+}
