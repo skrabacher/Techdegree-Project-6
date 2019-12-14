@@ -16,11 +16,14 @@ app.set('view engine', 'pug'); // tells express we will be using pug templates
 app.use('/static', express.static(path.join(__dirname, 'public'))); //tells express where to access the static files(images, stylesheets, etc)
 app.use('/', indexRouter); //requires /routes/index for root path in app.js
 
-//ERROR HANDLER
-app.use((req, res, next) => {
+//ERROR HANDLERS
+app.use((req, res, next) => { //404 handler > if request isn't picked up by one of the route handlers, users will get this error in the window
     const err = new Error("404 not found.");
     next(err); //when an object is passed into next, express jumps to the first middleware with 4 parameters 
-},);
+}, (err, req, res, next) => {
+    res.locals.error = err;
+    res.render('error');
+});
 
 //Runs the express server on port 4000
 app.listen(3000, () => { //FIRST parameter is the port number. (3000) type "localhost:3000" into browser and "node app.js" into the command line to run the app and activatete express server
