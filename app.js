@@ -8,18 +8,22 @@ const path = require('path'); //module provides utilities for working with file 
 const indexRouter = require('./routes/index'); //requires the index.js file in the routes folder
 
 
-//view engine set up
+//VIEW ENGINE SET UP
 app.set('views', path.join(__dirname, 'views'));//tells express the file path for the folder where the different views templates will be stored
 //__dirname has value of the absolute path of the directory containing the currently executing file
 app.set('view engine', 'pug'); // tells express we will be using pug templates 
 
-// app.use(bodyParser.json()); //
-// app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/static', express.static(path.join(__dirname, 'public'))); //tells express where to access the static files
-
+app.use('/static', express.static(path.join(__dirname, 'public'))); //tells express where to access the static files(images, stylesheets, etc)
 app.use('/', indexRouter); //requires /routes/index for root path in app.js
 
-app.listen(4000, () => { //FIRST parameter is the port number. (3000) type "localhost:3000" into browser and "node app.js" into the command line to run the app and activatete express server
+//ERROR HANDLER
+app.use((req, res, next) => {
+    const err = new Error("404 not found.");
+    next(err); //when an object is passed into next, express jumps to the first middleware with 4 parameters 
+},);
+
+//Runs the express server on port 4000
+app.listen(3000, () => { //FIRST parameter is the port number. (3000) type "localhost:3000" into browser and "node app.js" into the command line to run the app and activatete express server
     console.log('The app is running on localhost:3000');
 }); 
 //The `app.listen` method can take a parameter, which will tell the server: which port to serve the application on
