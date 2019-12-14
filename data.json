@@ -4,7 +4,7 @@
             "id" : 0,
             "project_name" : "Project 1", 
             "description" : "A Random Quote Generator", 
-            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "technologies" : ["JavaScript", "CSS", "HTML"], 
             "live_link" : "https://skrabacher.github.io/Project-1-Exceeds-Expectations-Ready-to-Submit/", 
             "github_link" : "https://github.com/skrabacher/Project-1-Exceeds-Expectations-Ready-to-Submit", 
             "image_urls" : ["/static/images/rsz_p1-box.jpg", "/static/images/rsz_p1-landscape.jpg", "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page."] 
@@ -14,7 +14,7 @@
             "id" : 1,
             "project_name" : "Project 2", 
             "description" : "List Pagination and Filtering for Student Directory", 
-            "technologies" : "an array of strings containing a list of the technologies used in the project 2", 
+            "technologies" : ["JavaScript", "CSS", "HTML"], 
             "live_link" : "https://skrabacher.github.io/Techdegree-Project-2/", 
             "github_link" : "https://github.com/skrabacher/Techdegree-Project-2", 
             "image_urls" : ["/static/images/rsz_p2-box.jpg", "/static/images/rsz_p2-landscape.jpg", "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page."] 
@@ -24,7 +24,7 @@
             "id" : 2,
             "project_name" : "Project 3", 
             "description" : "Interactive Form", 
-            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "technologies" : ["JavaScript", "CSS", "HTML"], 
             "live_link" : "https://skrabacher.github.io/Techdegree-Project-3/", 
             "github_link" : "https://github.com/skrabacher/Techdegree-Project-3", 
             "image_urls" : ["/static/images/rsz_p3-box.jpg", "/static/images/rsz_p3-landscape.jpg", "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page."] 
@@ -34,7 +34,7 @@
             "id" : 3,
             "project_name" : "Project 4", 
             "description" : "OOP Game Show App - Phrase Hunter", 
-            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "technologies" : ["JavaScript", "CSS", "HTML"], 
             "live_link" : "https://skrabacher.github.io/Techdegree-Project-4/", 
             "github_link" : "https://github.com/skrabacher/Techdegree-Project-4", 
             "image_urls" : ["/static/images/rsz_p4-box.jpg", "/static/images/rsz_p4-landscape.jpg", "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page."] 
@@ -44,7 +44,7 @@
             "id" : 4,
             "project_name" : "Project 5", 
             "description" : "Public API Requests for Employee Directory", 
-            "technologies" : "an array of strings containing a list of the technologies used in the project", 
+            "technologies" : ["JavaScript", "CSS", "HTML"], 
             "live_link" : "https://skrabacher.github.io/-Techdegree-Project-5/", 
             "github_link" : "https://github.com/skrabacher/-Techdegree-Project-5", 
             "image_urls" : ["/static/images/rsz_p5-box.jpg", "/static/images/rsz_p5-landscape.jpg", "an array of strings containing file paths from the views folder to the images themselves. You'll need a main image to be shown on the landing page, and three images to be shown on the project page."] 
