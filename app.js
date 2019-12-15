@@ -18,10 +18,12 @@ app.use('/', indexRouter); //requires /routes/index for root path in app.js
 
 //ERROR HANDLERS
 app.use((req, res, next) => { //404 handler > if request isn't picked up by one of the route handlers, users will get this error in the window
-    const err = new Error("404 not found.");
+    //const err = new Error("404 not found.");
     next(err); //when an object is passed into next, express jumps to the first middleware with 4 parameters 
 }, (err, req, res, next) => {
+    err.status = 500;
     res.locals.error = err;
+    res.status(err.status);// error status will show in dev tools in browser
     res.render('error');
 });
 
